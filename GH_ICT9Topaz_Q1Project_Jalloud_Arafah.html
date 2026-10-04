@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <style>
+        
+        body {
+            margin: 0;
+            font-family:monospace;
+            background-color: white;
+            color: #333;
+        }
+
+        .container {
+            width: 76%;
+            margin: auto;
+        }
+
+      
+        nav {
+            height: 45px;
+            background-color: #958068;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        nav img {
+            width: 38px;
+            height: 38px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+            margin-left: 15px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-color: #fff3c4;
+            height: 215px;
+            text-align: center;
+            padding-top: 20px;
+            box-sizing: border-box;
+        }
+
+        .hero img {
+            width: 75px;
+            height: 75px;
+            object-fit: contain;
+        }
+
+        .hero h1 {
+            font-family: monospace;
+            font-size: 27px;
+            margin: 5px 0 18px;
+        }
+
+        .hero p {
+            font-size: 12px;
+            font-style: italic;
+            color: #555;
+        }
+
+        section {
+            width: 55%;
+            margin: 27px auto;
+        }
+
+        .section-title {
+            background: #958068;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            padding: 5px;
+            border-radius: 5px;
+            margin-bottom: 17px;
+        }
+
+        .about-text {
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        .work {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .work img {
+            width: 230px;
+            height: 110px;
+            object-fit: cover;
+            border: 2px dashed #555;
+            border-radius: 5px;
+        }
+
+        .work-info {
+            font-size: 12px;
+            line-height: 1.8;
+        }
+
+        .work-info a {
+            color: #785b42;
+        }
+
+        .work-caption {
+            text-align: center;
+            font-size: 11px;
+            margin-top: -8px;
+            margin-bottom: 25px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #999;
+            margin-top: 25px;
+        }
+
+        .contact-box {
+            width: 65%;
+            margin: auto;
+            padding: 15px;
+            background-color: rgb(255, 243, 212);
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+            box-sizing: border-box;
+        }
+
+        .contact-box label {
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 7px;
+            margin: 5px 0 8px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: 11px;
+        }
+
+        textarea {
+            height: 55px;
+            resize: none;
+        }
+
+        .radio-group,
+        .checkbox-group {
+            font-size: 11px;
+            margin: 5px 0 10px;
+        }
+
+        button {
+            width: 100%;
+            background-color: #958068;
+            color: white;
+            border: none;
+            padding: 7px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-family: monospace;
+        }
+
+        button:hover {
+            background-color: #755e4f;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 25px;
+            background-color: #958068;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            font-size: 11px;
+        }
+    </style>
+</head>
+
+<body>
+
+   
+    <div class="container">
+        <nav>
+            <div>
+                <a href="#about">About Me</a>
+                <a href="#works">My Works</a>
+                <a href="#contact">Contact Me</a>
+            </div>
+        </nav>
+
+       
+        <div class="hero">
+            <img src="ICTPFP2.jpg" alt="Profile Picture" style="border-radius: 10px; width: 150px; height: auto;">
+
+            <h1>Hello, I'm <span>Arafah Jalloud!</span></h1>
+            <p>Beginner Web Developer</p>
+        </div>
+    </div>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <p class="about-text">
+            Hi! I'm Rafa, a beginner web developer with a passion for creating interactive websites. I enjoy learning new technologies and improving my coding skills.
+        </p>
+    </section>
+
+
+    <section id="works">
+        <h2 class="section-title">My Works</h2>
+
+        <div class="work">
+           
+            <img src="picture.png" alt="My Favorite Spotify Artists">
+
+            <div class="work-info">
+                • ✓ HTML & CSS Projects<br>
+                • ✓ Spotify Artist<br>
+                • ✓ List, Links and Images<br>
+                • <a href="https://github.com/JalloudA-9T-AY2627/Q1-SW1.git" target="_blank">
+                    View GitHub Repository
+                  </a>
+            </div>
+        </div>
+
+        <p class="work-caption">My Favorite Playlists</p>
+
+        <div class="work">
+            <img src="top 1 yearner.png" alt="My Rate a Movie Form">
+
+            <div class="work-info">
+                • ✓ HTML & CSS Projects<br>
+                • ✓ HTML Forms<br>
+                • ✓ Movie Recommendations<br>
+                • <a href="https://github.com/JalloudA-9T-AY2627/Q1-DRILL2.git" target="_blank">
+                    View GitHub Repository
+                  </a>
+            </div>
+        </div>
+
+        <p class="work-caption">My Rate a Movie Form</p>
+    </section>
+
+    <div class="container">
+        <hr>
+    </div>
+
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="contact-box">
+
+            <form>
+
+                <label>Your Name:</label>
+                <input type="text" placeholder="type your name here...">
+
+
+                <label>Your Email:</label>
+                <input type="email" placeholder="type your email here...">
+
+
+                <label>How did you find me?</label>
+
+                <div class="radio-group">
+                    <input type="radio" name="source"> Social Media
+                    <input type="radio" name="source"> Search Engine
+                    <input type="radio" name="source"> Google
+                    <input type="radio" name="source"> Friends
+                </div>
+
+
+                <label>Interested In:</label>
+
+                <div class="checkbox-group">
+                    <input type="checkbox"> Web Design
+                    <input type="checkbox"> Graphic Design
+                    <input type="checkbox"> Robotics
+                </div>
+
+
+                <label>Rate my Portfolio</label>
+
+                <select>
+                    <option>-- Select Rating --</option>
+                    <option>★★★★★</option>
+                    <option>★★★★☆</option>
+                    <option>★★★☆☆</option>
+                    <option>★★☆☆☆</option>
+                    <option>★☆☆☆☆</option>
+                </select>
+
+
+                <label>Any Feedback?</label>
+
+                <textarea placeholder="type your feedback here..."></textarea>
+
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </div>
+    </section>
+
+
+    <footer>
+        © 2026 Arafah Jalloud. All rights reserved.
+    </footer>
+
+</body>
+</html>
